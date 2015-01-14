@@ -9,14 +9,14 @@
 function pre($arg, $exit = false)
 {
     global $USER;
-    if($USER->GetID() == 1)
-    {
+    if ($USER->GetID() == 1) {
         echo "<pre>";
         print_r($arg);
         echo "</pre>";
     }
-    if($exit)
+    if ($exit) {
         exit;
+    }
 }
 /* DEBUG FUNCTIONS */
 
